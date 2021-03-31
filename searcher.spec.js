@@ -21,73 +21,73 @@ describe("Searcher", () => {
         expectTop5SearchResultsFor("salzburg").toEqual([
             {
                 filename: "Archbishopric_of_Salzburg.txt",
-                score: 39629.857142857145,
-                terms: { salzburg: 39629.857142857145 }
+                score: 39614.142857142855,
+                terms: { salzburg: 39614.142857142855 }
             },
             {
                 filename: "Herbert_von_Karajan.txt",
-                score: 10808.142857142857,
-                terms: { salzburg: 10808.142857142857 }
+                score: 10803.857142857143,
+                terms: { salzburg: 10803.857142857143 }
             },
             {
                 filename: "Wolfgang_Amadeus_Mozart.txt",
-                score: 10808.142857142857,
-                terms: { salzburg: 10808.142857142857 }
+                score: 10803.857142857143,
+                terms: { salzburg: 10803.857142857143 }
             },
             {
                 filename: "Alfons_Schuhbeck.txt",
-                score: 3602.714285714286,
-                terms: { salzburg: 3602.714285714286 }
+                score: 3601.285714285714,
+                terms: { salzburg: 3601.285714285714 }
             },
             {
                 filename: "Carl_Maria_von_Weber.txt",
-                score: 3602.714285714286,
-                terms: { salzburg: 3602.714285714286 }
+                score: 3601.285714285714,
+                terms: { salzburg: 3601.285714285714 }
             }
         ]);
     });
 
     it("finds two words", () => {
-        expectSearchResultsFor("austria germany").toHaveLength(1713);
+        expectSearchResultsFor("austria germany").toHaveLength(1694);
         expectTop5SearchResultsFor("austria germany").toEqual([
             {
-                filename: "Anschluss.txt",
-                score: 3891.5421630618653,
-                terms: {
-                    austria: 3729.5704225352115,
-                    germany: 161.97174052665383
-                }
-            },
-            {
                 filename: "Austria.txt",
-                score: 3794.359118745873,
+                score: 3820.0949838142933,
                 terms: {
-                    austria: 3729.5704225352115,
-                    germany: 64.78869621066153
+                    austria: 3754.531914893617,
+                    germany: 65.5630689206762
                 }
             },
             {
-                filename: "Germany.txt",
-                score: 2686.44960062236,
+                filename: "Anschluss.txt",
+                score: 3739.6523531527546,
                 terms: {
-                    austria: 710.3943661971831,
-                    germany: 1976.0552344251766
+                    austria: 3575.744680851064,
+                    germany: 163.9076723016905
                 }
             },
             {
                 filename: "Treaty_of_Versailles.txt",
-                score: 2650.6333143368884,
+                score: 2607.4107019339845,
                 terms: {
-                    austria: 1775.9859154929577,
-                    germany: 874.6473988439307
+                    austria: 1787.872340425532,
+                    germany: 819.5383615084526
+                }
+            },
+            {
+                filename: "Germany.txt",
+                score: 2583.6964004094843,
+                terms: {
+                    austria: 715.1489361702128,
+                    germany: 1868.5474642392717
                 }
             },
             {
                 filename: "Prussia.txt",
-                score: 1858.6827548463548,
+                score: 1808.7967241236202,
                 terms: {
-                    austria: 1243.1901408450703,
-                    germany: 615.4926140012846
+                    austria: 1251.5106382978724,
+                    germany: 557.2860858257477
                 }
             }
         ]);
@@ -97,16 +97,16 @@ describe("Searcher", () => {
         expectTop5SearchResultsFor("blueprint").toEqual([
             {
                 filename: "RNA.txt",
-                score: 25219,
+                score: 25209,
                 terms: {
-                    blueprint: 25219
+                    blueprint: 25209
                 }
             },
             {
                 filename: "_03_Bonnie_Clyde.txt",
-                score: 25219,
+                score: 25209,
                 terms: {
-                    blueprint: 25219
+                    blueprint: 25209
                 }
             }
         ]);
